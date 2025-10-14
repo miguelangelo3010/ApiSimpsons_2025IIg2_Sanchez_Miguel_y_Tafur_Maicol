@@ -1,0 +1,66 @@
+/* src/Pages/Inicio/InicioPage.css */
+.inicio-page{
+  /* altura fija con scroll si no cabe */
+  height: 75vh;
+  width: 100%;
+  overflow-y: auto;
+    background: url('../../assets/fondos.jpg') center/cover no-repeat, rgba(255, 255, 0, 0.315);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 16px;
+}
+
+/* Secciones separadas por div */
+.inicio-hero{
+  background: url('/images/bg-simpsons.jpg') center/cover no-repeat, #ffe86f;
+  border-radius: 16px;
+  padding: 28px 20px;
+  text-align: center;
+}
+.hero-actions{
+  margin-top: 12px;
+  display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;
+}
+.btn{
+  background: #1a1a1a; color: #fff; text-decoration: none;
+  padding: 8px 12px; border-radius: 10px;
+      &:hover{                
+        background-color: #001aff;
+        color: white;
+        transform: scale(1.1);
+    }
+}
+
+.inicio-loading, .inicio-error{ text-align: center; }
+
+.inicio-section{ display: flex; flex-direction: column; gap: 12px; }
+.section-head{ display: flex; align-items: baseline; justify-content: space-between; }
+.link{ text-decoration: none; color: #0d6efd; }
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.link{
+        text-decoration: none;
+    color: black;            
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    &:hover{                
+        color: #001aff;
+        font-weight: bold;
+        transform: scale(1.1);
+    }
+
+}
+
+@media (max-width: 900px){
+  .grid{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 600px){
+  .grid{ grid-template-columns: 1fr; }
+}

@@ -1,0 +1,46 @@
+
+.lugares-page{
+    background-color: rgba(255, 255, 0, 0.315);
+    height: 75vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    gap: 0;
+    margin: 0;
+}
+
+.cards{
+    height: 80%;
+    width: 100%;
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    overflow-y: scroll;
+}
+
+.pagination{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-pag{
+    height: 70%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.paginator{
+    display: flex;
+    height: 10%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}

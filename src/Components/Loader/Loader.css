@@ -1,0 +1,33 @@
+.Loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 80%;
+}
+
+.imagen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    width: auto;
+}
+.img-cargando{
+    width: auto;
+    height: 70%;
+}
+
+
+.texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    width: 50%;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
