@@ -1,15 +1,15 @@
 {
   "name": "apisimpsons-2025iig2-sanchez-miguel-y-tafur-maicol",
-  "homepage": "https://miguelangelo3010.github.io/ApiSimpsons_2025IIg2_Sanchez_Miguel_y_Tafur_Maicol/",
+  "homepage": "https://github.com/miguelangelo3010/ApiSimpsons_2025IIg2_Sanchez_Miguel_y_Tafur_Maicol.git",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-"scripts": {
-  "dev": "vite",
-  "build": "vite build",
-  "preview": "vite preview",
-  "deploy": "gh-pages -d dist"
-},
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
+  },
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
