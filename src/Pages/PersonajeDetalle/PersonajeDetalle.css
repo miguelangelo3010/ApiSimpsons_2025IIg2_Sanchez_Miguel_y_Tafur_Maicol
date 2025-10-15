@@ -1,0 +1,141 @@
+.personaje-detalle {
+  width: 80%;
+  height: 80%;
+  margin: 40px auto;
+  background-color: #fff8b3;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  text-align: center;
+  position: relative;
+}
+
+.btn-volver {
+  background: linear-gradient(to right, #2f64d6, #f8db27);
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: transform 0.2s, background 0.3s;
+}
+
+.btn-volver:hover {
+  transform: scale(1.05);
+  background: linear-gradient(to right, #f8db27, #2f64d6);
+}
+.detalle-contenido {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.informacion-primero {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.informacion-primero:hover {
+  transform: translateY(-4px);
+}
+
+.detalle-img {
+  width: 200px;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  border: 3px solid #ffcc00;
+}
+
+.informacion-primero h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.informacion-primero p {
+  font-size: 1rem;
+  margin: 6px 0;
+  color: #444;
+}
+
+.frases-box {
+  flex: 1 1 45%;
+  background: linear-gradient(145deg, #fefefe, #f3f3f3);
+  border: 1px solid #e0e0e0;
+  border-radius: 16px;
+  padding: 20px;
+  text-align: left;
+  height: 300px;
+  overflow-y: auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.frases-box h3 {
+  font-size: 1.3rem;
+  color: #333;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #ffcc00;
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+.frases-box p {
+  background: #fff8e1;
+  border-left: 4px solid #ffcc00;
+  margin: 10px 0;
+  padding: 10px 14px;
+  border-radius: 8px;
+  color: #444;
+  font-style: italic;
+  line-height: 1.4;
+  font-size: 0.95rem;
+}
+
+.frases-box::-webkit-scrollbar {
+  width: 8px;
+}
+
+.frases-box::-webkit-scrollbar-thumb {
+  background-color: #ffcc00;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .detalle-contenido {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .informacion-primero, .frases-box {
+    width: 100%;
+    flex: none;
+  }
+
+  .detalle-img {
+    width: 150px;
+  }
+
+  .frases-box {
+    height: auto;
+    max-height: 250px;
+  }
+
+  .frases-box p {
+    font-size: 0.9rem;
+  }
+}

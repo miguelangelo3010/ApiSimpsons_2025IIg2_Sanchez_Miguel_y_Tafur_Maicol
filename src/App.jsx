@@ -7,6 +7,7 @@ import EpisodiosPage from './Pages/EpisodiosPage/EpisodiosPage';
 import LugaresPage from './Pages/LugaresPage/LugaresPage';
 import Footer from './Components/Footer/Footer';
 import InicioPage from './Pages/InicioPage/InicioPage';
+import PersonajeDetalle from './Pages/PersonajeDetalle/PersonajeDetalle';
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
             <Route path='/personajes' element={<PersonajesPage />} />
             <Route path='/lugares' element={<LugaresPage />} />
             <Route path='/episodios' element={<EpisodiosPage />} />
+            <Route path='/personaje/:id' element={<PersonajeDetalle />} />
             <Route path='/*' element={<InicioPage />} />
           </Routes>
 
