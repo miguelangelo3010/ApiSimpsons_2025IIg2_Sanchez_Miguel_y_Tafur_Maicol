@@ -1,6 +1,6 @@
 
 .lugares-page{
-    background-color: rgba(255, 255, 0, 0.315);
+    background: url('../../assets/fondos.jpg') center/cover no-repeat, rgba(255, 255, 0, 0.315);
     height: 75vh;
     width: 100%;
     display: flex;
@@ -10,7 +10,7 @@
     gap: 0;
     margin: 0;
 }
-
+ 
 .cards{
     height: 80%;
     width: 100%;

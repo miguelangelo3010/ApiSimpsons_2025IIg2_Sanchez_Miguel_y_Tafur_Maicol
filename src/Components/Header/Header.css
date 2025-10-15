@@ -18,7 +18,7 @@ h1{
     height: auto;
     border-radius: 50%;
     margin-right: 2%;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 5px rgb(255, 251, 0);
 }
 .simsopms{
     width: auto;

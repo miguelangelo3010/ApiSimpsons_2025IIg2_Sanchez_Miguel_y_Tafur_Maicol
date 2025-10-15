@@ -1,26 +1,26 @@
 
 .personajes-page{
-    background-color: rgba(255, 255, 0, 0.315);
+    background: url('../../assets/fondos.jpg') center/cover no-repeat, rgba(255, 255, 0, 0.315);
     height: 75vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; 
+    padding: 20px;
     gap: 0;
     margin: 0;
 }
 .busquedad{
-    min-height: 10%;
+    height: 15%;
     width: 100%;
     display: flex; 
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 10px;
 }
-.cards{
-    max-height: 70%;
+.cards{ 
+    max-height: 80%;
     width: 100%;
     display: flex; 
     flex-direction: row;
@@ -33,9 +33,12 @@
 
 .pagination{
     display: flex;
+    height: 10%;
+    width: 100%;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .nav-pag{
@@ -51,4 +54,81 @@
     justify-content: center;
     align-items: center;
     padding: 0;
+}
+
+.titulo-personajes {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.img-personajes{
+    width: 40%;
+    height: auto;
+    margin-top: 20px;
+    margin-right: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    margin-bottom: 10px;
+
+}
+
+.info-caja {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; /* permite que los elementos bajen si no hay espacio */
+  background-color: #fcff4b8c;
+  width: 90%;
+  border-left: 5px solid #2c07ff;
+  border-radius: 10px;
+  padding: 20px 25px;
+  text-align: left;
+  font-size: 1.2rem;
+  color: #000;
+  margin: 0 auto 30px auto;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  gap: 20px; /* espacio entre imagen y texto */
+}
+
+
+
+/* Texto */
+.info-caja p {
+  flex: 1;
+  line-height: 1.5;
+  font-size: 1.1rem;
+}
+
+/* 📱 Ajustes para móviles */
+@media (max-width: 768px) {
+  .info-caja {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .img-personajes {
+    width: 70%;
+    max-width: 250px;
+    margin-bottom: 15px;
+  }
+
+  .info-caja p {
+    font-size: 1rem;
+  }
+}
+
+/* 📱 Teléfonos pequeños */
+@media (max-width: 480px) {
+  .info-caja {
+    width: 95%;
+    border-left: none;
+    border-top: 5px solid #2c07ff;
+  }
+
+  .info-caja p {
+    font-size: 0.95rem;
+  }
 }

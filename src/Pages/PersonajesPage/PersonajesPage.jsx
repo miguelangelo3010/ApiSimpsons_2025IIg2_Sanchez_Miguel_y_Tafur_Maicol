@@ -5,6 +5,7 @@ import Pagination from '../../Components/Pagination/Pagination';
 import ModalPersonaje from '../../Components/ModalPersonaje/ModalPersonaje';
 import BarraBusquedad from '../../Components/BarraBusquedad/BarraBusquedad';
 import Loader from '../../Components/Loader/Loader';
+import personajesImg from '../../assets/personajes.webp';
 
 import './PersonajesPage.css';
 
@@ -15,7 +16,6 @@ const PersonajesPage = () => {
   const [searchTerm, setSearchTerm] = useState('');
 
 
-  // Si quieres fijarlo: según tu ejemplo, hay 60 páginas
   const totalPages = 60;
 
   useEffect(() => {
@@ -32,7 +32,7 @@ const PersonajesPage = () => {
   const filteredCharacters = characters.filter((character) =>
     character.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
-
+ 
   return (
     <div className="personajes-page">
       {/* Barra de búsqueda */}
@@ -44,6 +44,16 @@ const PersonajesPage = () => {
       {filteredCharacters.length > 0 ? (
         <>
           <div className="cards">
+            <div className="info-caja animate__animated animate__fadeInDown">
+              <img className='img-personajes animate__animated animate__bounceIn' src={personajesImg} alt="" />
+              <p>
+                Explora a los habitantes más icónicos de Springfield. Aquí podrás ver su
+                ocupación, estado actual y algunas de sus frases más recordadas.
+                <br />
+                Usa el buscador para encontrar a tu personaje favorito.
+              </p>
+
+            </div>
             {filteredCharacters.map((character) => (
               <motion.div
                 key={character.id}
@@ -60,15 +70,16 @@ const PersonajesPage = () => {
                 />
               </motion.div>
             ))}
+            <div className="paginator">
+              <Pagination
+                count={totalPages}
+                page={page}
+                onChange={handleChange}
+              />
+            </div>
           </div>
 
-          <div className="paginator">
-            <Pagination
-              count={totalPages}
-              page={page}
-              onChange={handleChange}
-            />
-          </div>
+
 
           <ModalPersonaje personaje={selectedCharacter} onClose={handleCloseModal} />
         </>

@@ -39,11 +39,10 @@ const InicioPage = () => {
 
   return (
     <div className="inicio-page">
-      {/* HERO */}
-      <div className="inicio-hero">
+      <div className="inicio-hero animate__animated animate__bounce">
         <h1>Explora The Simpsons</h1>
         <p>Personajes, lugares icónicos y episodios memorables de Los Simpson.</p>
-        <div className="hero-actions">
+        <div className="hero-actions animate__animated animate__bounceIn">
           <Link to="/personajes" className="btn">Ver Personajes</Link>
           <Link to="/lugares" className="btn">Ver Lugares</Link>
           <Link to="/episodios" className="btn">Ver Episodios</Link>
@@ -52,8 +51,7 @@ const InicioPage = () => {
 
       {loading && <div className="inicio-loading">Cargando…</div>}
       {err && <div className="inicio-error">Error: {err}</div>}
-
-      {/* PERSONAJES */}
+ 
       <div className="inicio-section">
         <div className="section-head">
           <h2>Personajes destacados</h2>
@@ -61,12 +59,12 @@ const InicioPage = () => {
         </div>
         <div className="grid">
           {characters.map((c, i) => (
-            <CardsPersonajes key={c.id ?? i} data={c} />
+            <CardsPersonajes key={c.id ?? i} data={c} mostrarBoton={false}   />
           ))}
         </div>
       </div>
 
-      {/* LUGARES */}
+
       <div className="inicio-section">
         <div className="section-head">
           <h2>Lugares destacados</h2>
@@ -79,7 +77,6 @@ const InicioPage = () => {
         </div>
       </div>
 
-      {/* EPISODIOS */}
       <div className="inicio-section">
         <div className="section-head">
           <h2>Episodios destacados</h2>

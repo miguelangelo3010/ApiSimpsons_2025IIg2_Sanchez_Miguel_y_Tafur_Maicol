@@ -7,7 +7,7 @@ const Loader = () => {
         <div className='Loader'>
 
             <div className="texto">
-                <p>No se encontraron personajes con ese nombre.</p>
+                <p>No se encontraron elementos con ese nombre.</p>
                 <p>Prueba con otro.</p>
             </div>
             <div className="imagen">

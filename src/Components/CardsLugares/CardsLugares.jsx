@@ -3,7 +3,7 @@ import './CardsLugares.css'
 
 const CardsLugares = ({data}) => {
   return (
-    <div className="card card-lugar" style={{ width: '18rem' }}>
+    <div className="card card-lugar animate__animated animate__flipInX" style={{ width: '18rem' }}>
       <img
         src={`https://cdn.thesimpsonsapi.com/500/location/${data.id}.webp`}
         className="card-img-top"

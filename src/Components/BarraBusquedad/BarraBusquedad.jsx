@@ -11,7 +11,7 @@ const BarraBusquedad = ({onSearchChange}) => {
         <input
           className="form-control me-2"
           type="search"
-          placeholder="Buscar personaje..."
+          placeholder="Buscar elemento..."
           aria-label="Buscar"
           onChange={handleInputChange}
         />

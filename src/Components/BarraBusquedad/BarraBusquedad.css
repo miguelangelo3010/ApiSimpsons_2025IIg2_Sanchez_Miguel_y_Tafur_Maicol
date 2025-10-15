@@ -1,9 +1,16 @@
 .navbar-busquedad{
     height: 100%;
     width: 100%;
-    background-color: rgb(255, 255, 175);
+  background-color: transparent !important;
+  display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .busqueda-form{
     width: 50%;
+    border-radius: 8px;
+    box-shadow:  0 4px 8px rgb(255, 251, 0);
 }

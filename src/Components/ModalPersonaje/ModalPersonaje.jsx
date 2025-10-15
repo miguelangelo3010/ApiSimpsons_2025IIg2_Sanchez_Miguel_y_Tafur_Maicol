@@ -2,6 +2,7 @@ import React from 'react'
 import './ModalPersonaje.css'
 import cerrarIcon from '../../assets/cerrar.png'
 
+
 const ModalPersonaje = ({ personaje, onClose }) => {
     if (!personaje) return null;
     return (
@@ -9,7 +10,7 @@ const ModalPersonaje = ({ personaje, onClose }) => {
             <div className="modal-content" onClick={(e) => e.stopPropagation()}>
                 <div className="primeraParte">
                     <button className="close-btn" onClick={onClose}>
-                        <img src={cerrarIcon} alt="Cerrar" />
+                        <img className='img-cerrar' src={cerrarIcon} alt="Cerrar" />
                     </button>
 
                     <img
