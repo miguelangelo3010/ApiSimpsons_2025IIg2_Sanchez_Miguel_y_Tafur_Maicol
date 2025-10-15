@@ -12,14 +12,12 @@ const NavBar = () => {
 
   return (
     <nav className="navbar-menu ">
-      {/* LOGO o botón de menú */}
       <div className="navbar-toggle" onClick={() => setMenuOpen(!menuOpen)}>
         <span className={`bar ${menuOpen ? 'open' : ''}`}></span>
         <span className={`bar ${menuOpen ? 'open' : ''}`}></span>
         <span className={`bar ${menuOpen ? 'open' : ''}`}></span>
       </div>
 
-      {/* Enlaces del menú */}
       <ul className={`navbar-links ${menuOpen ? 'active' : ''} animate__animated animate__fadeInUp`} >
         <li>
           <Link to="/" onClick={() => setMenuOpen(false)}>

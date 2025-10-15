@@ -1,4 +1,4 @@
-// src/Pages/Inicio/InicioPage.jsx
+
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import CardsPersonajes from '../../Components/CardsPersonajes/CardsPersonajes';

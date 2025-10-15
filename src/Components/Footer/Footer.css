@@ -31,7 +31,6 @@
   color: #fff;
 }
 
-/* 📱 Responsive */
 @media (max-width: 600px) {
   .footer-content p {
     font-size: 0.9rem;

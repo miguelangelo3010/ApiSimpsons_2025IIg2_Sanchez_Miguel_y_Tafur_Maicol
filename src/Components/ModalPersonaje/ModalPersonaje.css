@@ -78,7 +78,6 @@
   line-height: 1.6;
 }
 
-/* Estilo para cada frase individual */
 .frases-box p {
   position: relative;
   padding-left: 20px;
@@ -87,7 +86,6 @@
   transition: transform 0.2s ease, color 0.2s ease;
 }
 
-/* Punto decorativo animado (tipo viñeta) */
 .frases-box p::before {
   position: absolute;
   left: 0;
@@ -95,13 +93,11 @@
   opacity: 0.7;
 }
 
-/* Animación al pasar el mouse */
 .frases-box p:hover {
   color: #0056b3;
   transform: translateX(5px);
 }
 
-/* Scroll bonito */
 .frases-box::-webkit-scrollbar {
   width: 8px;
 }

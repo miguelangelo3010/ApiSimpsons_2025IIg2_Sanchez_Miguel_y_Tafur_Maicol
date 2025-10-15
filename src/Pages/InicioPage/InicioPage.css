@@ -1,6 +1,6 @@
-/* src/Pages/Inicio/InicioPage.css */
+
 .inicio-page{
-  /* altura fija con scroll si no cabe */
+
   height: 75vh;
   width: 100%;
   overflow-y: auto;
@@ -11,7 +11,6 @@
   padding: 16px;
 }
 
-/* Secciones separadas por div */
 .inicio-hero{
   background: url('/images/bg-simpsons.jpg') center/cover no-repeat, #ffe86f;
   border-radius: 16px;

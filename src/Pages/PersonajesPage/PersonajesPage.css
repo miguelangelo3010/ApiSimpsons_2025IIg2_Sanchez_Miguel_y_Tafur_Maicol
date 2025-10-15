@@ -78,8 +78,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap; /* permite que los elementos bajen si no hay espacio */
-  background-color: #fcff4b8c;
+  flex-wrap: wrap; 
+  background-color: #fbff008c;
   width: 90%;
   border-left: 5px solid #2c07ff;
   border-radius: 10px;
@@ -89,19 +89,16 @@
   color: #000;
   margin: 0 auto 30px auto;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  gap: 20px; /* espacio entre imagen y texto */
+  gap: 20px; 
 }
 
 
-
-/* Texto */
 .info-caja p {
   flex: 1;
   line-height: 1.5;
   font-size: 1.1rem;
 }
 
-/* 📱 Ajustes para móviles */
 @media (max-width: 768px) {
   .info-caja {
     flex-direction: column;
@@ -120,7 +117,6 @@
   }
 }
 
-/* 📱 Teléfonos pequeños */
 @media (max-width: 480px) {
   .info-caja {
     width: 95%;
